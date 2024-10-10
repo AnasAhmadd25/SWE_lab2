@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Capitalizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter a Sentence to Capitalize</h1>
+    <form action="/result" method="POST">
+        <input type="text" name="sentence" placeholder="Enter your sentence here" required>
+        <br><br>
+        <input type="submit" value="Capitalize">
+    </form>
+</body>
+</html>
